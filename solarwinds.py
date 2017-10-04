@@ -50,7 +50,7 @@ class Api(object):
     def status(self):
         status = self.query("SELECT WebsiteID FROM Orion.Websites")
 
-        if int(status['results'][0]['WebsiteID']) == 1:
+        if int(status['results'][0]['WebsiteID']) >= 1:
             return True
         else:
             return False
