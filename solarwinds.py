@@ -44,7 +44,7 @@ class Api(object):
         password: A string containing the SolarWinds password.
     """
     def __init__(self, api_hostname=None, username=None, password=None):
-            self.api_url = "https://%s:17778/SolarWinds/InformationService/v3/Json/" % api_hostname
+            self.api_url = "https://%s:17774/SolarWinds/InformationService/v3/Json/" % api_hostname
             self.credentials = (username, password)
 
     def status(self):
